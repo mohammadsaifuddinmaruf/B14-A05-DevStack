@@ -24,9 +24,9 @@ export function Cards({ cards, selectedIds, onAdd }: CardsProps) {
               <h3 className="text-xl font-bold text-slate-950 transition-colors group-hover:text-pink-700">{card.name}</h3>
               <p className="mt-2 text-sm leading-6 text-slate-500">{card.description}</p>
             </div>
-            <div className="mt-auto flex flex-wrap items-center gap-2 pt-6 text-xs font-semibold">
+            <div className="relative mt-auto flex flex-wrap items-center gap-2 pt-6 text-xs font-semibold">
               <span className="rounded-full bg-indigo-50 px-3 py-1.5 text-indigo-700">{card.category}</span>
-              <span className="rounded-full bg-slate-100 px-3 py-1.5 text-slate-600">{card.difficulty}</span>
+              <span className="absolute left-1/2 -translate-x-1/2 rounded-full bg-slate-100 px-3 py-1.5 text-slate-600">{card.difficulty}</span>
               <span className="ml-auto text-sm text-slate-600">★ {card.rating}</span>
             </div>
             <button
