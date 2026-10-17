@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-slate-50/90 backdrop-blur">
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
+      <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:min-h-18 sm:px-8">
         <button
           className="rounded-lg p-2 text-slate-700 md:hidden"
           aria-label="Toggle navigation menu"
@@ -22,7 +22,7 @@ function Header() {
           <span className="hidden text-xl text-brand-gradient sm:inline">Dev Stack</span>
         </a>
 
-        <nav className={`${menuOpen ? 'flex' : 'hidden'} absolute left-0 top-full w-full flex-col gap-1 border-b border-slate-200 bg-white p-4 md:static md:flex md:w-auto md:flex-row md:border-0 md:bg-transparent md:p-0`}>
+        <nav className={`${menuOpen ? 'flex' : 'hidden'} absolute left-0 top-full w-full flex-col gap-1 border-b border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 md:static md:flex md:w-auto md:flex-row md:border-0 md:bg-transparent md:p-0 md:shadow-none`}>
           {navLinks.map((link) => (
             <a
               key={link}
