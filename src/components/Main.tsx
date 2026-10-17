@@ -63,7 +63,7 @@ function Main() {
       {!loading && !loadError && (
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
           <Cards cards={cards} selectedIds={selectedIds} onAdd={handleAdd} />
-          <aside className="sticky top-24 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <aside className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-24">
             <div className="flex items-start justify-between gap-3">
               <div>
                 <h2 className="text-xl font-bold text-slate-950">Your Stack</h2>
