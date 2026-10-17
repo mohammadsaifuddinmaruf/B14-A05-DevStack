@@ -32,8 +32,9 @@ export function Cards({ cards, selectedIds, onAdd }: CardsProps) {
             <button
               type="button"
               disabled={added}
+              aria-label={added ? `${card.name} is already in your stack` : `Add ${card.name} to your stack`}
               onClick={() => onAdd(card)}
-              className={`mt-5 w-full rounded-xl px-4 py-3 text-sm font-bold ${added ? 'cursor-not-allowed bg-emerald-50 text-emerald-700' : 'brand-gradient text-white shadow-md shadow-pink-100 hover:-translate-y-0.5'}`}
+              className={`mt-5 w-full rounded-xl px-4 py-3 text-sm font-bold transition-transform active:scale-[0.98] ${added ? 'cursor-not-allowed bg-emerald-50 text-emerald-700' : 'brand-gradient text-white shadow-md shadow-pink-100 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-pink-200'}`}
             >
               {added ? '✓ Added to Stack' : '+ Add to Stack'}
             </button>
