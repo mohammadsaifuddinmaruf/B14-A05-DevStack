@@ -27,7 +27,6 @@ function Banner() {
           <div className="overflow-hidden rounded-[1.5rem] bg-slate-100">
             <img src={bannerImageUrl} alt="A selection of development tools arranged as a stack" className="aspect-[4/3] w-full object-cover object-center" />
           </div>
-          <span className="absolute -bottom-3 left-8 rounded-full border border-slate-100 bg-white px-4 py-2 text-xs font-bold text-slate-600 shadow-md">Curate your toolkit</span>
         </div>
       </div>
     </section>

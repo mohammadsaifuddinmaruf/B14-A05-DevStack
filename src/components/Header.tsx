@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { isEscapeKey } from '../scripts/navigation';
+import { logoImageUrl } from './brandAssets';
 
 const navLinks = ['Home', 'Technologies', 'Projects', 'About', 'Contact'];
 
@@ -30,7 +31,7 @@ function Header() {
         </button>
 
         <a href="#" className="flex items-center gap-2 font-bold tracking-tight">
-          <img src="/src/assets/logo.png" alt="" className="h-9 w-9" />
+          <img src={logoImageUrl} alt="" className="h-9 w-9" />
           <span className="hidden text-xl text-brand-gradient sm:inline">Dev Stack</span>
         </a>
 
