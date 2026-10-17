@@ -1,3 +1,5 @@
+import { bannerImageUrl } from './bannerAssets';
+
 function Banner() {
   return (
     <section id="home" className="relative isolate mx-auto max-w-7xl px-4 pb-14 pt-12 sm:px-8 sm:pb-20 sm:pt-16 lg:pb-24 lg:pt-24">
@@ -23,7 +25,7 @@ function Banner() {
         </div>
         <div className="relative rounded-[2rem] border border-white bg-white/70 p-3 shadow-2xl shadow-slate-200/70 sm:p-4">
           <div className="overflow-hidden rounded-[1.5rem] bg-slate-100">
-            <img src="/src/assets/banner-stack.png" alt="A selection of development tools arranged as a stack" className="aspect-[4/3] w-full object-cover object-center" />
+            <img src={bannerImageUrl} alt="A selection of development tools arranged as a stack" className="aspect-[4/3] w-full object-cover object-center" />
           </div>
           <span className="absolute -bottom-3 left-8 rounded-full border border-slate-100 bg-white px-4 py-2 text-xs font-bold text-slate-600 shadow-md">Curate your toolkit</span>
         </div>
