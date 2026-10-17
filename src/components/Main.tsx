@@ -58,8 +58,13 @@ function Main() {
         <p className="mt-4 max-w-xl text-base leading-7 text-slate-500">Pick the tools that match your project and build a stack you can ship with confidence.</p>
       </section>
 
-      {loading && <div className="rounded-2xl border border-slate-200 bg-white p-10 text-center text-slate-500">Loading technology library...</div>}
-      {loadError && <div className="rounded-2xl border border-red-200 bg-red-50 p-6 text-center text-red-700">{loadError}</div>}
+      {loading && (
+        <div role="status" className="rounded-2xl border border-slate-200 bg-white p-10 text-center text-slate-500">
+          <span className="mx-auto mb-3 block h-6 w-6 animate-spin rounded-full border-2 border-slate-200 border-t-pink-500" />
+          Loading technology library...
+        </div>
+      )}
+      {loadError && <div role="alert" className="rounded-2xl border border-red-200 bg-red-50 p-6 text-center text-red-700">{loadError}</div>}
       {!loading && !loadError && (
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
           <Cards cards={cards} selectedIds={selectedIds} onAdd={handleAdd} />
@@ -72,8 +77,8 @@ function Main() {
               {selectedCards.length > 0 && <button type="button" onClick={handleClear} className="text-xs font-bold text-pink-600 hover:text-pink-700">Remove All</button>}
             </div>
             {selectedCards.length === 0 ? (
-              <div className="mt-8 rounded-xl border border-dashed border-slate-200 px-5 py-8 text-center">
-                <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-pink-50 text-2xl text-pink-500">+</div>
+              <div className="mt-8 rounded-xl border border-dashed border-slate-200 bg-slate-50/60 px-5 py-8 text-center">
+                <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-pink-50 text-2xl font-light text-pink-500">+</div>
                 <p className="mt-4 text-sm font-semibold text-slate-600">Your stack is empty</p>
                 <p className="mt-1 text-xs leading-5 text-slate-400">Add technologies from the library to see them here.</p>
               </div>
