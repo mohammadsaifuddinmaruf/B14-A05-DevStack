@@ -50,12 +50,12 @@ function Main() {
 
   return (
     <main id="technologies" className="mx-auto max-w-7xl px-5 pb-20 sm:px-8">
-      <section className="mb-10" id="about">
-        <p className="text-sm font-bold uppercase tracking-[0.2em] text-pink-600">Your toolkit, your way</p>
-        <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
+      <section className="mb-10 max-w-2xl" id="about">
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-pink-600 sm:text-sm">Your toolkit, your way</p>
+        <h2 className="mt-3 text-3xl font-black leading-tight tracking-tight text-slate-950 sm:text-4xl">
           Explore the <span className="text-brand-gradient">Technologies</span>
         </h2>
-        <p className="mt-3 max-w-xl text-slate-500">Pick the tools that match your project and build a stack you can ship with confidence.</p>
+        <p className="mt-4 max-w-xl text-base leading-7 text-slate-500">Pick the tools that match your project and build a stack you can ship with confidence.</p>
       </section>
 
       {loading && <div className="rounded-2xl border border-slate-200 bg-white p-10 text-center text-slate-500">Loading technology library...</div>}
