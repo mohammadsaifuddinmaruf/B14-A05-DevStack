@@ -1,15 +1,15 @@
 function Banner() {
   return (
-    <section id="home" className="relative isolate mx-auto max-w-7xl px-5 pb-16 pt-16 sm:px-8 lg:pb-24 lg:pt-24">
+    <section id="home" className="relative isolate mx-auto max-w-7xl px-4 pb-14 pt-12 sm:px-8 sm:pb-20 sm:pt-16 lg:pb-24 lg:pt-24">
       <div className="hero-orb absolute -right-16 top-16 -z-10 h-72 w-72 rounded-full" />
       <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-pink-600">Build. Ship. Grow.</p>
-          <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-6xl">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-pink-600 sm:text-sm">Build. Ship. Grow.</p>
+          <h1 className="max-w-3xl text-4xl font-black leading-[1.08] tracking-tight text-slate-950 sm:text-6xl">
             Build Your Ideal{' '}
             <span className="text-brand-gradient">Development Stack</span>
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
             Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your next project.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
